@@ -1,0 +1,138 @@
+input[type="checkbox"].menuInput {
+    display: none;                    
+  }
+  .menuLabel {
+    position: fixed;
+    top: .5em;
+    right: .5em;
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #1150ae;
+    border-radius: 50%;
+  
+    transition: all .4s ease;
+    z-index: 999;
+  }
+  .menuInput:checked + .menuLabel {
+    transform: translate(-10px, -3px) rotate(-90deg) ; 
+    transition: all .5s ease;
+  }
+  .menuInput:checked ~ .topmenu {
+    position: fixed;
+    top:3em;
+    right: 0;
+    z-index: 980;
+    transition: all .5s ease;
+  }
+  .topmenu {
+    display: block;
+    position: fixed;
+    top: 3em;
+    right: -40em; 
+    z-index: 80;
+    padding: 2rem 0;
+    margin: 0;
+    margin-top: 15px;
+    width: 70%;
+    background-color: var(--nc-lk-2);
+    transition: all .5s ease;
+    border-radius: 10%;
+  }
+  
+  .topmenu a {
+    display: block;     
+    font-size: .9em;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--nc-lk-2);
+  }
+  
+  .topmenu a:hover,
+  .topmenu a:active,
+  .topmenu a:focus,
+  .logo a:hover {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin-bottom: 0;
+    transition: all .3s ease;
+  } 
+  .topmenu a:current {
+    color: orangered;
+  }
+  .topnav {
+    background-color: var(--nc-lk-1);
+  }
+  .topnav p {
+    margin: 0;
+    padding: .4em 0;
+    color: #fff;
+    letter-spacing: .1em;
+    text-align: center;
+  }
+  .socialbutts {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .resizable-image {
+    max-width: 50px; 
+    height: auto;
+    vertical-align: middle; 
+}
+
+@media screen and (max-width: 600px) {
+    .resizable-image {
+        max-width: 50px;
+    }
+}
+
+  
+  @media screen and (min-width: 48em) {
+    .topnav {
+      position: fixed;
+      z-index: 2;
+      top:0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 60em) {
+    .topnav {
+      display: grid;
+      flex-flow: row;
+      grid-template-columns: 1fr 4fr;
+    }
+    .topmenu {
+      display: flex;
+      flex-flow: row;   
+      justify-content: flex-end;
+      position: relative;
+      top:0;
+      left: 1em;
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      transition: none;  
+    }
+    .topmenu a {
+      padding: .6em 1.5em .5em 1.5em;
+      border-bottom: none;
+      background-color: transparent;
+    }
+   
+    .menuLabel {
+      display: none;
+    }
+  }
+  
+  

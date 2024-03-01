@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <title>Sebastian's Gym - Verkefni 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/chatbox.css">
+    <link rel="stylesheet" href="css/topmenu.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="icon" type="image/svg" href="myndir/logo.png">
+</head>
+<body class="fade-in"></body>
+  <section class="topnav">
+    <p>Sebastian's Gym <a href="index.html"><img src="myndir/logo.png" alt="Image Description" class="resizable-image"></a> </p>
+    <nav>
+      <input type="checkbox" id="toggle" class="menuInput">
+      <label for="toggle" class="menuLabel">X</label>
+      <div class="topmenu">
+        <a href="index.html"> Heim</a>
+        <a href="register.html"> Skrá sér inn</a>
+        <a href="#base2"> Fréttir</a>
+        <a href="about.html"> Um okkur</a>
+        <a href="#footer">Hafðu samband</a>
+        <div class="socialbutts">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <header style="background-image: url('myndir/bakgrun.jpg'); background-size: cover; background-position: center;">
+  <div class="containerb">
+    <div class="navbar">
+      <div class="logo">
+        <img src="img/logo-color.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="containerb">
+    <div class="content">
+      <h2>Sebastian's Gym</h2>
+      <h2>Vertu með í dag!</h2>
+      <h2>Sjáumst í ræktinni!</h2>
+      <a class="explore-button" href="register.html">Skrá sér inn</a>
+      <div class="social_icons">
+        <i class="fa fa-brands fa-facebook"></i>
+        <i class="fa fa-brands fa-twitter"></i>
+        <i class="fa fa-brands fa-instagram"></i>
+        <i class="fa fa-brands fa-pinterest"></i>
+      </div>
+    </div>
+   <a href="index.html"><img src="myndir/logo.png" alt="Image Description" class="right-image"></a>
+  </div>
+</header>
+<script src="script.js"></script>
+  <div class="blueBg">
+    <section class="col-1 container">
+      <div class="value">
+        <section>
+          <h3>TÍMAR & NÁMSKEIÐ</h3>
+          <div>
+            <table>
+              <thead>
+                  <tr> 
+                      <th scope="col">NÁMSKEIÐ</th>
+                      <th scope="col">SALUR</th>
+                      <th scope="col">HEFST</th>
+                      <th scope="col">SKRA SIG</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td scope="row" data-label="WHO">Box 201</td>
+                      <td data-label="WHERE">Þórssalur</td>
+                      <td data-label="WHEN">10:30 - 12:00 frá mánudegi til sunnudags</td>
+                      <td data-label="CHECK IN"><a class="button" href="register.html">skrá sig</a></td>
+                  </tr>
+                  <tr>
+                      <td scope="row" data-label="WHO">MMA 201 unglingar</td>
+                      <td data-label="WHERE">Grettissalur</td>
+                      <td data-label="WHEN">13:30 - 17:00 frá mánudegi til sunnudags</td>
+                      <td data-label="CHECK IN"><a class="button" href="register.html">skrá sig</a></td>
+                  </tr>
+                  <tr>
+                      <td scope="row" data-label="WHO">BJJ 101 35+</td>
+                      <td data-label="WHERE">Grettissalur</td>
+                      <td data-label="WHEN">22:30 - 00:00 frá mánudegi til sunnudags</td>
+                      <td data-label="CHECK IN"><a class="button" href="register.html">skrá sig</a></td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="WHO">Víkingaþrek</td>
+                    <td data-label="WHERE">Hel</td>
+                    <td data-label="WHEN">10:30 - 12:00 frá mánudegi til sunnudags</td>
+                    <td data-label="CHECK IN"><a class="button" href="register.html">skrá sig</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="WHO">Freyjuafl - Mömmuþrek</td>
+                    <td data-label="WHERE">Þórssalur</td>
+                    <td data-label="WHEN">13:30 - 17:00 frá mánudegi til sunnudags</td>
+                    <td data-label="CHECK IN"><a class="button" href="register.html">skrá sig</a></td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="WHO">CrossFit</td>
+                    <td data-label="WHERE">Útgarður</td>
+                    <td data-label="WHEN">22:30 - 00:00 frá mánudegi til sunnudags</td>
+                    <td data-label="CHECK IN"><a class="button" href="register.html">skrá sig</a></td>
+                </tr>
+              </tbody>
+              <tfoot>
+              </tfoot>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <main>
+    <section class="container col-2">
+      <div>
+          <ol>
+              <li><img src="myndir/merch.png">
+          </ol>
+      </div>
+      <div>
+        <form action="postur-ok.html" method="GET">
+            <fieldset class="register">
+              <legend>Kaupa varninginn okkar</legend>
+                  Nafn:  
+                  <input type="text" 
+                          name="nafn" 
+                          placeholder="Full name" 
+                          required 
+                          title="Vinsamlegast skráið nafn">
+              </p>
+                <p>Kyn: 
+                  <input type="radio" name="kyn" value="Hann" id="Hann">
+                  <label for="Hann">Hann</label> |
+                  <input type="radio" name="kyn" value="Hún" id="Hún"> 
+                  <label for="Hún">Hún</label> |
+                </p>
+                <p>
+                    Símanúmer: 
+                    <input  type="text" 
+                            name="sími" 
+                            placeholder="Telephone (7 digits)"
+                            title="Vinsamlegast skráið aðeins 7 tölustafi"
+                            required
+                            pattern="\d{3}(?:[\-\s]?)\d{4}">
+                </p>
+                <p>
+                  Tölvupóstur: 
+                  <input  type="email" 
+                          name="tölvupóstur" 
+                          placeholder="Email address" 
+                          required>
+                </p>
+                <p>
+                  Heimilisfang: 
+                  <input  type="tölvupóstur" 
+                          name="tölvupóstur" 
+                          placeholder="address" 
+                          required>
+                </p>
+                <section class="form-col-3">
+                  <p> 
+                    Stærð: 
+                    <select name="ferdaval">
+                      <option value="1">XS</option>
+                      <option value="2">S</option>
+                      <option value="3">M</option>
+                      <option value="4">L</option>
+                      <option value="5">XL</option>
+                      <option value="6">XXL</option>
+                    </select>
+                  </p>
+                </section>
+                <p>Skilaboð:
+                    <textarea rows="4" name="comment" placeholder="Comment"></textarea>
+                </p>
+                <p>
+                  <input type="checkbox" name="postlist" value="OK" id="plist"> 
+                  <label for="plist">Skráið mig á póstlistann</label> |
+                  </select>
+                </p>
+                <p class="center"><input type="submit" name="submit" value="Greiðslu"></p>
+            </fieldset>
+        </form>
+      </div>
+    </section>
+    <div class="base2" id="base2">
+      <section class="container col-3">
+        <figure>
+            <img src="myndir/pic1.png" alt="Image 1">
+          </a>
+        </figure>
+        <figure>  
+            <img src="myndir/pic2.png" alt="Image 2">
+          </a>
+        </figure>
+        <figure>
+            <img src="myndir/pic3.png" alt="Image 3">
+          </a>
+        </figure>
+        <figure>
+             <img src="myndir/pic4.png" alt="Image 4">
+          </a>
+        </figure>
+        <figure>
+            <img src="myndir/pic5.png" alt="Image 5">
+          </a>
+        </figure>
+        <figure>
+            <img src="myndir/pic6.png" alt="Image 6">
+          </a>
+        </figure>
+      </section>
+    </div>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index.html">Heim</a></li>
+      <li class="menu__item"><a class="menu__link" href="about.html">Um okkur</a></li>
+      <li class="menu__item"><a class="menu__link" href="register.html">Skrá sér inn</a></li>
+      <li class="menu__item"><a class="menu__link" href="#base2">Fréttir</a></li>
+      <li class="menu__item"><a class="menu__link" href="#footer">Hafðu samband</a></li>
+      <li class="menu__item"><a class="menu__link" href="skilmalar.html">Skilmálar og skilyrði</a></li>
+
+    </ul>
+    <div id="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1740.3039944387822!2d-21.9026066!3d64.1391975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674cc84500001%3A0x16719bf129fa31a7!2zVMOma25pc2vDs2xpbm4!5e0!3m2!1sen!2sis!4v1701271220919!5m2!1sen!2sis" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p>&copy;Sebastian's Gym 2024 | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <label for="popup" class="chatbutt"><span class="icon-bubbles4">?</span></label>
+    <input type="checkbox" id="popup">
+    <section class="chatbox">
+      <form action="#top" method="dialog"> 
+        <fieldset> 
+          <legend>&nbsp;Spjallbox&nbsp;</legend>
+          <label>Nafn:</label>
+          <input type="text" placeholder="Name" name="Nafn" required>
+          <br><label>Tölvupóstur:</label>
+          <input type="email" name="TP" placeholder="Email" required>
+          <br><label>Skilaboð:</label>
+          <textarea rows='5' name="skilaboð" placeholder="Message" required></textarea>
+          <p><input type="submit" value="Senda" class="button-primary"></p>
+        </fieldset>
+        </form>
+    </section>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Here i am</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Than
+                k to pop me out of that button, but now i'm done so you can close this window.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
